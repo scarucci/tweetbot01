@@ -7,7 +7,9 @@ APP_SECRET = 'XXXX'
 OAUTH_TOKEN = 'XXXX'
 OAUTH_TOKEN_SECRET = 'XXXX'
 
-twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
+twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET) # authenticate twitter credentials
+
+# search for tweets based on 'tag' + amount of tweets to display
 
 search = twitter.search(q='simoncarucci', count=5)
 
